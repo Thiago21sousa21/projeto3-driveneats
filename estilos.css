@@ -1,0 +1,51 @@
+div{
+    border: 1px solid black;
+}
+.header{
+    height: 92px;
+    width: 414px;
+
+    margin: 0 auto;
+}
+.container{
+    width: 414px;
+
+    margin: 0 auto;
+
+}
+.c2-pratos{
+    display: flex;
+    justify-content: left;
+
+}
+.prato{
+    width: 172px;
+    height: 216px;
+
+    margin-left: 16px;
+
+}
+.c2-bebidas{
+    display: flex;
+
+}
+.bebida{
+    width: 172px;
+    height: 216px;
+
+    margin-left: 16px;
+}
+.footer{
+    width: 414px;
+    height: 92px;
+
+    margin: 0 auto;
+}
+.c2-sobremesa{
+    display: flex;
+}
+.sobremesa{
+    width: 172px;
+    height: 216px;
+    margin-left: 16px;
+}
