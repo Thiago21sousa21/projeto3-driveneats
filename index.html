@@ -18,7 +18,18 @@
             <div class="c-pratos">
                 <h3 class="marg123">Primeiro, seu prato</h3>
                 <div class="c2-pratos">
-                    <div class="prato">
+                    <div onclick="select('.prato1');" class="prato prato1">
+                        <div class="molde-img">
+                            <img src="./material/frango_yin_yang.png" alt="">
+                        </div>
+                        <div class="molde-texto">
+                            <h4>Frango Yin Yang</h4>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <h6>R$ 14,90</h6>
+                        </div>
+                        <ion-icon class="ion-off" name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div onclick="select('.prato2');" class="prato prato2">
                         <div class="molde-img">
                             <img src="./material/frango_yin_yang.png" alt="">
                         </div>
@@ -29,18 +40,7 @@
                         </div>
 
                     </div>
-                    <div class="prato">
-                        <div class="molde-img">
-                            <img src="./material/frango_yin_yang.png" alt="">
-                        </div>
-                        <div class="molde-texto">
-                            <h4>Frango Yin Yang</h4>
-                            <p>Um pouco de batata, um pouco de salada</p>
-                            <h6>R$ 14,90</h6>
-                        </div>
-
-                    </div>
-                    <div class="prato">
+                    <div onclick="select('.prato3');" class="prato prato3">
                         <div class="molde-img">
                             <img src="./material/frango_yin_yang.png" alt="">
                         </div>
@@ -56,7 +56,7 @@
             <div class="c-bebidas">
                 <h3>Agora, sua bebida</h3>
                 <div class="c2-bebidas">
-                    <div class="bebida">
+                    <div onclick="selectBebida('.bebida1')" class="bebida bebida1">
                         <div class="molde-img">
                             <img src="./material/coca-cola.png  " alt="">
                         </div>
@@ -67,7 +67,7 @@
                         </div>
 
                     </div>
-                    <div class="bebida">
+                    <div onclick="selectBebida('.bebida2')" class="bebida bebida2">
                         <div class="molde-img">
                             <img src="./material/coca-cola.png  " alt="">
                         </div>
@@ -78,7 +78,7 @@
                         </div>
 
                     </div>
-                    <div class="bebida">
+                    <div onclick="selectBebida('.bebida3')" class="bebida bebida3">
                         <div class="molde-img">
                             <img src="./material/coca-cola.png  " alt="">
                         </div>
@@ -95,7 +95,7 @@
             <div class="c-sobremesa">
                 <h3>Por fim, sua sobremesa</h3>
                 <div class="c2-sobremesa">
-                    <div class="sobremesa">
+                    <div onclick="selectSobremesa('.sobremesa1')" class="sobremesa sobremesa1">
                         <div class="molde-img">
                             <img src="./material/pudim.png" alt="">
                         </div>
@@ -106,7 +106,7 @@
                         </div>
 
                     </div>
-                    <div class="sobremesa">
+                    <div onclick="selectSobremesa('.sobremesa2')" class="sobremesa sobremesa2">
                         <div class="molde-img">
                             <img src="./material/pudim.png" alt="">
                         </div>
@@ -117,7 +117,7 @@
                         </div>
 
                     </div>
-                    <div class="sobremesa">
+                    <div onclick="selectSobremesa('.sobremesa3')" class="sobremesa sobremesa3">
                         <div class="molde-img">
                             <img src="./material/pudim.png" alt="">
                         </div>
@@ -140,5 +140,8 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
+    <script type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+    <script script nomodule src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
 </body>
 </html>
