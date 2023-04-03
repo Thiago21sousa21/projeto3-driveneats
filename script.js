@@ -3,11 +3,34 @@ let scannerBebida = "";
 let scannerSobremesa = "";
 
 function MostraOculta(){
-   const mstoclt =  document.querySelector('.c-checkout');
-   mstoclt.classList.toggle('oculto');
+   /* const mstoclt =  document.querySelector('.c-checkout');
+   mstoclt.classList.toggle('oculto'); */
 }
 function funcPedido(){
-    MostraOculta();
+    let enviantepratoValor = document.querySelector('.c2-pratos .selecionado h6');
+    let recebentepratoValor = document.querySelector('.v-prato');
+    recebentepratoValor.innerHTML = enviantepratoValor.innerHTML;
+    let v1 = Number(recebentepratoValor.innerHTML.replace('R$','').replace(',','.'));
+
+    let enviantebebidaValor = document.querySelector('.c2-bebidas .selecionado h6');
+    let recebentebebidaValor = document.querySelector('.v-bebida');
+    recebentebebidaValor.innerHTML = enviantebebidaValor.innerHTML;
+    let v2 = Number(recebentebebidaValor.innerHTML.replace('R$','').replace(',','.'));
+
+    let enviantesobremesaValor = document.querySelector('.c2-sobremesa .selecionado h6');
+    let recebentesobremesaValor = document.querySelector('.v-sobremesa');
+    recebentesobremesaValor.innerHTML = enviantesobremesaValor.innerHTML;
+    let v3 = Number(recebentesobremesaValor.innerHTML.replace('R$','').replace(',','.'));
+
+    let soma = v1 + v2 + v3;
+    let floatsoma = parseFloat(soma).toFixed(2);
+    console.log(floatsoma);
+    let mostrafloatsoma = floatsoma.replace('.',',');
+    console.log(mostrafloatsoma);
+     
+
+
+    /* MostraOculta(); */
 }
 
 function scanner(){
