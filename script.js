@@ -24,9 +24,24 @@ function funcPedido(){
 
     let soma = v1 + v2 + v3;
     let floatsoma = parseFloat(soma).toFixed(2);
-    console.log(floatsoma);
     let mostrafloatsoma = floatsoma.replace('.',',');
-    console.log(mostrafloatsoma);
+
+    //AQUI EU VOU PEGAR OS NOMES DOS PRATOS
+
+    let envPratoNome = document.querySelector('.c2-pratos .selecionado h4');
+    console.log(envPratoNome);
+    let envBebidaNome = document.querySelector('.c2-bebidas .selecionado h4');
+    console.log(envBebidaNome);
+    let envSobremesaNome = document.querySelector('.c2-sobremesa .selecionado h4');
+    console.log(envSobremesaNome);
+
+    const WhatsTxt = 
+        `Olá, gostaria de fazer o pedido:%0A` +
+        `- Prato: ${envPratoNome}%0A` +
+        `- Bebida: ${envBebidaNome}%0A` +
+        `- Sobremesa: ${envSobremesaNome}%0A` +
+        `Total: R$ ${mostrafloatsoma}%0A%0A`; +
+    window.open(`https://wa.me/+5586999198044?text=${WhatsTxt}`);
      
 
 
