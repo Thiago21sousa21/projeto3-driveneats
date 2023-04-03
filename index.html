@@ -18,38 +18,38 @@
             <div class="c-pratos">
                 <h3 class="marg123">Primeiro, seu prato</h3>
                 <div class="c2-pratos">
-                    <div onclick="select('.prato1');" class="prato prato1">
+                    <div onclick="selectPrato('.prato1');" class="prato prato1">
                         <div class="molde-img">
                             <img src="./material/frango_yin_yang.png" alt="">
                         </div>
                         <div class="molde-texto">
-                            <h4>Frango Yin Yang</h4>
+                            <h4 data-test:"item-name">Frango Yin Yang</h4>
                             <p>Um pouco de batata, um pouco de salada</p>
                             <h6>R$ 14,90</h6>
                         </div>
-                        <ion-icon class="ion-off" name="checkmark-circle"></ion-icon>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
-                    <div onclick="select('.prato2');" class="prato prato2">
+                    <div onclick="selectPrato('.prato2');" class="prato prato2">
                         <div class="molde-img">
                             <img src="./material/frango_yin_yang.png" alt="">
                         </div>
                         <div class="molde-texto">
-                            <h4>Frango Yin Yang</h4>
+                            <h4 data-test:"item-name">Frango Yin Yang</h4>
                             <p>Um pouco de batata, um pouco de salada</p>
                             <h6>R$ 14,90</h6>
                         </div>
-
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
-                    <div onclick="select('.prato3');" class="prato prato3">
+                    <div onclick="selectPrato('.prato3');" class="prato prato3">
                         <div class="molde-img">
                             <img src="./material/frango_yin_yang.png" alt="">
                         </div>
                         <div class="molde-texto">
-                            <h4>Frango Yin Yang</h4>
+                            <h4 data-test:"item-name">Frango Yin Yang</h4>
                             <p>Um pouco de batata, um pouco de salada</p>
                             <h6>R$ 14,90</h6>
                         </div>
-
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -61,33 +61,33 @@
                             <img src="./material/coca-cola.png  " alt="">
                         </div>
                         <div class="molde-texto">
-                            <h4>Coquinha gelada</h4>
+                            <h4 data-test:"item-name">Coquinha gelada</h4>
                             <p>Lata 350ml</p>
                             <h6>R$ 4,90</h6>
                         </div>
-
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div onclick="selectBebida('.bebida2')" class="bebida bebida2">
                         <div class="molde-img">
                             <img src="./material/coca-cola.png  " alt="">
                         </div>
                         <div class="molde-texto">
-                            <h4>Coquinha gelada</h4>
+                            <h4 data-test:"item-name">Coquinha gelada</h4>
                             <p>Lata 350ml</p>
                             <h6>R$ 4,90</h6>
                         </div>
-
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div onclick="selectBebida('.bebida3')" class="bebida bebida3">
                         <div class="molde-img">
                             <img src="./material/coca-cola.png  " alt="">
                         </div>
                         <div class="molde-texto">
-                            <h4>Coquinha gelada</h4>
+                            <h4 data-test:"item-name">Coquinha gelada</h4>
                             <p>Lata 350ml</p>
                             <h6>R$ 4,90</h6>
                         </div>
-
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
 
                 </div>
@@ -100,44 +100,55 @@
                             <img src="./material/pudim.png" alt="">
                         </div>
                         <div class="molde-texto">
-                            <h4>Pudim</h4>
+                            <h4 data-test:"item-name">Pudim</h4>
                             <p>Apenas pudim</p>
                             <h6>R$ 7,90</h6>
                         </div>
-
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div onclick="selectSobremesa('.sobremesa2')" class="sobremesa sobremesa2">
                         <div class="molde-img">
                             <img src="./material/pudim.png" alt="">
                         </div>
                         <div class="molde-texto">
-                            <h4>Pudim</h4>
+                            <h4 data-test:"item-name">Pudim</h4>
                             <p>Apenas pudim</p>
                             <h6>R$ 7,90</h6>
                         </div>
-
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div onclick="selectSobremesa('.sobremesa3')" class="sobremesa sobremesa3">
                         <div class="molde-img">
                             <img src="./material/pudim.png" alt="">
                         </div>
                         <div class="molde-texto">
-                            <h4>Pudim</h4>
+                            <h4 data-test:"item-name">Pudim</h4>
                             <p>Apenas pudim</p>
                             <h6>R$ 7,90</h6>
                         </div>
-
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>  
 
                 </div>
             </div>
         </div>
         <div class="footer">
-            <div class="botao">
+            <button disabled onclick="funcPedido()" class="bottao"><div class="botao ">
                 <h2>Selecione os 3 itens <br>
                     para fechar o pedido</h2>
-            
+                </button>
             </div>
+        </div>
+    </div>
+    <div class="c-checkout oculto">
+        <div class="c2-checkout">
+            <div class="titulo-checkout"><p>Confirme seu pedido</p></div>
+            <div class="prato-checkout"><p>Frango Yin Yang</p><p>14,90</p></div>
+            <div class="bebida-checkout"><p>Coquinha gelada</p><p>4,90</p></div>
+            <div class="sobremesa-checkout"><p>Pudim</p><p>7,90</p></div>
+            <div class="total-checkout"><p>TOTAL</p><p>R$ 27,70</p></div>
+            <div class="botao-pedir-checkout"><p>Tudo certo, pode pedir!</p></div>
+            <div class="cancelar-checkout"><p onclick="MostraOculta()">Cancelar</p></div>
         </div>
     </div>
     <script src="./script.js"></script>
