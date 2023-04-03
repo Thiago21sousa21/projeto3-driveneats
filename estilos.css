@@ -303,6 +303,8 @@ ion-icon{
     margin-bottom: 24px;
 }
 button{
+    border: none;
+    background: none;
 }
 .oculto{
     display: none;

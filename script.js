@@ -35,11 +35,11 @@ function funcPedido(){
     let envSobremesaNome = document.querySelector('.c2-sobremesa .selecionado h4');
     console.log(envSobremesaNome);
 
-    const WhatsTxt = 
+    let WhatsTxt = 
         `Olá, gostaria de fazer o pedido:%0A` +
-        `- Prato: ${envPratoNome}%0A` +
-        `- Bebida: ${envBebidaNome}%0A` +
-        `- Sobremesa: ${envSobremesaNome}%0A` +
+        `- Prato: ${envPratoNome.innerHTML}%0A` +
+        `- Bebida: ${envBebidaNome.innerHTML}%0A` +
+        `- Sobremesa: ${envSobremesaNome.innerHTML}%0A` +
         `Total: R$ ${mostrafloatsoma}%0A%0A`; +
     window.open(`https://wa.me/+5586999198044?text=${WhatsTxt}`);
      
